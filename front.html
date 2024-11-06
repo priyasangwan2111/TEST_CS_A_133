@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter Page</title>
+    <link rel="stylesheet" href="front.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Currency Converter</h1>
+        <p>Convert American Dollars (USD) to Turkish Lira (TRY)</p>
+    </header>
+
+
+    <main>
+        
+        <div class="left-section">
+            <h2>Click below to open the converter</h2>
+            <a href="#converterSection">Open Currency Converter</a>
+        </div>
+
+    
+        <div class="right-section" id="converterSection">
+            
+            <h2>USD to TRY Converter</h2>
+            <form id="currencyForm" onsubmit="convertCurrency(event)">
+                <label for="usd">Amount in USD:</label>
+                <input type="number" id="usd" placeholder="Enter amount in USD" required>
+                <button type="submit">Convert</button><br><br>
+                <label for="try">Amount in TRY:</label>
+                <input type="text" id="try" placeholder="Converted amount in TRY" readonly>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Currency Converter. All rights reserved.</p>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+
+</body>
+</html>
